@@ -130,7 +130,7 @@ console.log("-------------------------------------------------------------------
 let totalMoney = 0;
 const earnedMoneyPerHour = 38.45;
 
-//Thanks for Jamsheed for this solution.
+// best solution :) 
 tasks
     .map(changeTime => changeTime.duration / 60)
     .filter(filterTime => filterTime < 2)
