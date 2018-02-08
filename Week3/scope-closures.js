@@ -1,7 +1,7 @@
 
 let createBase = function (number) {
     return function (y) {
-        console.log(number + y);
+        return number + y;
     }
 }
 let addSix = createBase(6);

@@ -47,12 +47,10 @@ function callBack(startValue, endValue, callByThree, callByFive) {
         }
         //Both functions should be called if the array value is divisible by both 3 and 5
         if(i % 3 === 0 && i % 5 === 0) {
-            console.log(i + " is divisible by 3 and 5.");
+            callByThree(i) + callByFive(i);
         }
     }
     return array;
-    
-
 }
 
 function divideByThree(dividedNumberThree) {
@@ -126,3 +124,21 @@ var MotorBike = function () {
     this.engines = 1;
     this.seats = 2;
 };
+
+console.log("------------------------------------------------------------------------");
+
+
+function multiplyAll(arr) {
+    var product = 1;
+    // Only change code below this line
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = 0; j < arr[i].length; j++) {
+            console.log(product *= arr[i][j]);
+        }
+    }
+    // Only change code above this line
+    return product;
+}
+
+// Modify values below to test your code
+multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);   
